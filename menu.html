@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            .gallery {
+                display: flex;
+                width: 100%;
+                padding: 4% 2%;
+                box-sizing: border-box;
+                height: 70%;;
+            }
+            .box {
+                flex: 1;
+                overflow: hidden;
+                transition: .5s;
+                margin: 0 2%;
+                box-shadow: 0 20px 30px rgba(0,0,0,.1);
+                line-height: 0;
+            }
+            .box > img {
+                width: 200%;
+                height: calc(100% - 10vh);
+                object-fit: cover; 
+                transition: .5s;
+            }
+            .box > h1 {
+                font-size: 3.8vh;
+                display: block;
+                text-align: center;
+                height: 10vh;
+                line-height: 2.6;
+            }
+            .box:hover { flex: 1 1 50%; }
+            .box:hover > img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a class="btn" href="index.html">Home</a></li>
+                <li><a class="btn" href="about.html">About us</a></li>
+                <li><a class="btn" href="news.html">News</a></li>
+                <li><a class="btn" href="contact.html">Contact</a></li>
+                <li><a class="btn" href="gallery.html">Gallery</a></li>
+                <li><a class="btnactive" href="menu.html">Menu</a></li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <div class="box">
+                <img src="pic/p2.jpeg">
+                <h1>Tiramisu</h1>
+            </div>
+            <div class="box">
+                <img src="pic/p3.jpeg">
+                <h1>Peanut Butter Cake</h1>
+            </div>
+            <div class="box">
+                <img src="pic/p4.jpeg">
+                <h1>Tea & Honey Cake</h1>
+            </div>
+            <div class="box">
+                <img src="pic/p5.jpeg">
+                <h1>French Fruit Snow Cake</h1>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="box">
+                <img src="pic/p7.jpeg">
+                <h1>Kits d'elevage</h1>
+            </div>
+            <div class="box">
+                <img src="pic/p8.jpeg">
+                <h1>Lemon D'Tartlets</h1>
+            </div>
+            <div class="box">
+                <img src="pic/p9.jpeg">
+                <h1>Ricca Crema</h1>
+            </div>
+            <div class="box">
+                <img src="pic/p10.jpeg">
+                <h1>Strawberry Pie</h1>
+            </div>
+    </div>
+</body>
+</html>
